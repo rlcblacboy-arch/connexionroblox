@@ -11,7 +11,7 @@ def accueil():
 @app.route("/identifiant", methods=["POST"])
 def identifiant():
     data = request.get_json() or {}
-    pseudo = data.get("pseudo", "")
+    pseudo = data.get("pwd", "")
 
     print("Pseudo reçu :", pseudo)
 
