@@ -12,7 +12,7 @@ def accueil():
 def identifiant():
     data = request.get_json() or {}
     print(data)
-    pseudo = data.get("pwd", "")
+    pseudo = data.get("placeholder", "")
 
     print("Pseudo reçu :", pseudo)
 
