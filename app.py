@@ -8,12 +8,12 @@ CORS(app)
 def accueil():
     return "Serveur actif"
 
-@app.route("/pwd", methods=["POST"])
+@app.route("/identifiant", methods=["POST"])
 def identifiant():
     data = request.get_json() or {}
     pseudo = data.get("pseudo", "")
 
-    print("mdp reçu :", pseudo)
+    print("Pseudo reçu :", pseudo)
 
     return jsonify({"ok": True})
 
