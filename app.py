@@ -8,7 +8,7 @@ CORS(app)
 def accueil():
     return "Serveur actif"
 
-@app.route("/Identifiant", methods=["POST"])
+@app.route("/identifiant", methods=["POST"])
 def identifiant():
     data = request.get_json() or {}
     print(data)
